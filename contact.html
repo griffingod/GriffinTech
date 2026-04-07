@@ -1,58 +1,102 @@
 <section class="contact-section">
+  <div class="container">
+    <div class="contact-header">
+      <h2>Request Service</h2>
+      <p class="subtitle">Tell us what you need and Griffin Technology Services will contact you shortly.</p>
+    </div>
 
-<div class="contact-container">
+    <div class="contact-wrapper">
+      <div class="contact-info-card">
+        <span class="contact-badge">Fast Local Tech Support</span>
+        <h3>Reliable Help for Your Home or Business</h3>
+        <p>
+          We provide professional technology services for customers across New Mexico, including
+          computer repair, WiFi setup, virus removal, printer setup, network support, and more.
+        </p>
 
-<h2>Request Service</h2>
-<p class="subtitle">Tell us what you need and we'll contact you shortly</p>
+        <div class="contact-info-list">
+          <div class="info-item">
+            <strong>Email</strong>
+            <p><a href="mailto:griffintechnologyservicesllc@gmail.com">griffintechnologyservicesllc@gmail.com</a></p>
+          </div>
 
-<form action="https://formsubmit.co/griffintechnologyservicesllc@gmail.com" method="POST">
+          <div class="info-item">
+            <strong>Service Area</strong>
+            <p>Los Lunas, Albuquerque, and surrounding New Mexico areas</p>
+          </div>
 
-<label>Full Name</label>
-<input type="text" name="name" placeholder="John Smith" required>
+          <div class="info-item">
+            <strong>Response Goal</strong>
+            <p>Fast follow-up for urgent and scheduled service requests</p>
+          </div>
+        </div>
+      </div>
 
-<label>Email Address</label>
-<input type="email" name="email" placeholder="john@email.com" required>
+      <div class="contact-form-card">
+        <form action="https://formsubmit.co/griffintechnologyservicesllc@gmail.com" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input id="name" type="text" name="name" placeholder="John Smith" required>
+            </div>
 
-<label>Phone Number</label>
-<input type="tel" name="phone" placeholder="(505) 555-5555" required>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input id="email" type="email" name="email" placeholder="john@email.com" required>
+            </div>
+          </div>
 
-<label>Select Service</label>
-<select name="service" required>
-<option value="">Choose a Service</option>
-<option>Computer Repair</option>
-<option>WiFi Setup</option>
-<option>Virus Removal</option>
-<option>New Computer Setup</option>
-<option>Business IT Support</option>
-<option>Network Setup</option>
-<option>Printer Setup</option>
-<option>Security Camera Installation</option>
-</select>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input id="phone" type="tel" name="phone" placeholder="(505) 555-5555" required>
+            </div>
 
-<label>Urgency Level</label>
-<select name="urgency">
-<option value="">Select urgency</option>
-<option>Same Day</option>
-<option>Within 24 Hours</option>
-<option>This Week</option>
-<option>Flexible</option>
-</select>
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input id="location" type="text" name="location" placeholder="Los Lunas, NM">
+            </div>
+          </div>
 
-<label>Location</label>
-<input type="text" name="location" placeholder="Los Lunas, NM">
+          <div class="form-group">
+            <label for="service">Select Service</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a Service</option>
+              <option>Computer Repair</option>
+              <option>WiFi Setup</option>
+              <option>Virus Removal</option>
+              <option>New Computer Setup</option>
+              <option>Business IT Support</option>
+              <option>Network Setup</option>
+              <option>Printer Setup</option>
+              <option>Security Camera Installation</option>
+            </select>
+          </div>
 
-<label>Description</label>
-<textarea name="message" placeholder="Describe your issue..." rows="6"></textarea>
+          <div class="form-group">
+            <label for="urgency">Urgency Level</label>
+            <select id="urgency" name="urgency">
+              <option value="">Select urgency</option>
+              <option>Same Day</option>
+              <option>Within 24 Hours</option>
+              <option>This Week</option>
+              <option>Flexible</option>
+            </select>
+          </div>
 
-<button class="submit-btn" type="submit">Request Service</button>
+          <div class="form-group">
+            <label for="message">Description</label>
+            <textarea id="message" name="message" placeholder="Describe your issue..." rows="6"></textarea>
+          </div>
 
-<input type="hidden" name="_subject" value="New Service Request">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_autoresponse" value="Thank you for contacting Griffin Technology Services. We will contact you shortly.">
+          <button class="submit-btn" type="submit">Request Service</button>
 
-</form>
-
-</div>
-
+          <input type="hidden" name="_subject" value="New Service Request">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_autoresponse" value="Thank you for contacting Griffin Technology Services. We will contact you shortly.">
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
