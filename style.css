@@ -494,3 +494,272 @@ footer p {
     padding: 14px;
   }
 }
+.site-header {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 78px;
+}
+
+.logo {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 999px;
+  transition: all 0.25s ease;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.header-cta {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(135deg, #1e90ff 0%, #0b3d91 100%);
+  color: #ffffff;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(11, 61, 145, 0.25);
+  transition: all 0.25s ease;
+}
+
+.header-cta:hover {
+  transform: translateY(-2px);
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 45px;
+}
+
+.section-heading h2 {
+  font-size: 2.3rem;
+  margin-bottom: 12px;
+}
+
+.section-heading p {
+  color: #64748b;
+  font-size: 1.05rem;
+}
+
+.services-section,
+.why-section,
+.about-section {
+  padding: 90px 20px;
+}
+
+.services-grid,
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.service-card,
+.feature-card {
+  background: #ffffff;
+  padding: 28px 24px;
+  border-radius: 22px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(219, 228, 240, 0.85);
+  transition: all 0.25s ease;
+}
+
+.service-card:hover,
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.service-card h3,
+.feature-card h3 {
+  color: #0f172a;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.service-card p,
+.feature-card p {
+  color: #64748b;
+}
+
+.cta-section {
+  padding: 20px 20px 90px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.section-tag {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: #eaf3ff;
+  color: #0b3d91;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.about-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  color: #0f172a;
+}
+
+.about-content p {
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.about-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(219, 228, 240, 0.85);
+}
+
+.about-card h3 {
+  margin-bottom: 18px;
+  color: #0f172a;
+}
+
+.about-card ul {
+  padding-left: 20px;
+  color: #64748b;
+}
+
+.about-card li {
+  margin-bottom: 12px;
+}
+
+.site-footer {
+  background: #0f172a;
+  color: rgba(255, 255, 255, 0.88);
+  padding: 50px 20px 30px;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.site-footer h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.site-footer p {
+  margin-bottom: 10px;
+}
+
+.site-footer a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  margin-top: 16px;
+  font-size: 0.92rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 980px) {
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-heading h2,
+  .about-content h2 {
+    font-size: 1.9rem;
+  }
+}
