@@ -1,19 +1,24 @@
-<form action="https://formsubmit.co/griffintechnologyservicesllc@gmail.com" method="POST" class="contact-form">
+<section class="contact-section">
+
+<div class="contact-container">
 
 <h2>Request Service</h2>
+<p class="subtitle">Tell us what you need and we'll contact you shortly</p>
 
-<h3>Customer Information</h3>
+<form action="https://formsubmit.co/griffintechnologyservicesllc@gmail.com" method="POST">
 
-<input type="text" name="name" placeholder="Full Name" required>
+<label>Full Name</label>
+<input type="text" name="name" placeholder="John Smith" required>
 
-<input type="email" name="email" placeholder="Email Address" required>
+<label>Email Address</label>
+<input type="email" name="email" placeholder="john@email.com" required>
 
-<input type="tel" name="phone" placeholder="Phone Number" required>
+<label>Phone Number</label>
+<input type="tel" name="phone" placeholder="(505) 555-5555" required>
 
-<h3>Service Details</h3>
-
+<label>Select Service</label>
 <select name="service" required>
-<option value="">Select Service</option>
+<option value="">Choose a Service</option>
 <option>Computer Repair</option>
 <option>WiFi Setup</option>
 <option>Virus Removal</option>
@@ -24,19 +29,22 @@
 <option>Security Camera Installation</option>
 </select>
 
+<label>Urgency Level</label>
 <select name="urgency">
-<option value="">Urgency Level</option>
+<option value="">Select urgency</option>
 <option>Same Day</option>
 <option>Within 24 Hours</option>
 <option>This Week</option>
 <option>Flexible</option>
 </select>
 
-<input type="text" name="location" placeholder="City / Business Name">
+<label>Location</label>
+<input type="text" name="location" placeholder="Los Lunas, NM">
 
-<textarea name="message" placeholder="Describe the issue..." rows="6"></textarea>
+<label>Description</label>
+<textarea name="message" placeholder="Describe your issue..." rows="6"></textarea>
 
-<button class="button" type="submit">Request Service</button>
+<button class="submit-btn" type="submit">Request Service</button>
 
 <input type="hidden" name="_subject" value="New Service Request">
 <input type="hidden" name="_captcha" value="false">
@@ -44,3 +52,7 @@
 <input type="hidden" name="_autoresponse" value="Thank you for contacting Griffin Technology Services. We will contact you shortly.">
 
 </form>
+
+</div>
+
+</section>
